@@ -39,14 +39,14 @@ A API recebe os dados no seguinte formato Json:
     comportamento semelhante ao gráfico que representa a população, onde os dados estão próximos a mediana,
     representada por um pequeno corte ao meio, na parte mais volumosa do gráfico.
 
-    ![imagem0](BoxPlot.png)
+ ![imagem0](BoxPlot.png)
 
     Os valores discrepantes mostrados na figura são resultado de surtos de dengue ocorridos na cidade
     de Fortaleza, portanto não são outliers. Há um evidente relacionamento entre as variáveis estudadas e o alvo, os surtos
     de dengue são resultado de picos nos valores das variáveis estudadas. Isso fica mais evidente no gráfico de correlacão de variáveis.
 
-    ![imagem1](corr_1.png) ![imagem2](corr_5.png)
-    ![imagem3](corr_10.png) ![imagem4](corr_15.png)
+ ![imagem1](corr_1.png) ![imagem2](corr_5.png)
+ ![imagem3](corr_10.png) ![imagem4](corr_15.png)
 
     As figuras a seguir mostram a relação entre os dados de entrada e suas
     relações com 4 alvos: casos de dengue para a 1ª, 5ª, 10ª e 15ª semanas à frente, consecutivamente.
@@ -58,8 +58,8 @@ A API recebe os dados no seguinte formato Json:
 
 ### Desempenho dos modelos.
 
-    ![imagem5](knn.png) ![imagem6](svr.png) ![imagem7](mlp_valter.png)
-    ![imagem8](mlp_nico.png) ![imagem9](lstm.png) ![imagem10](xgboost.png)
+ ![imagem5](knn.png) ![imagem6](svr.png) ![imagem7](mlp_valter.png)
+ ![imagem8](mlp_nico.png) ![imagem9](lstm.png) ![imagem10](xgboost.png)
 
     No eixo X das figuras estão os períodos em anos de casos de dengue estudados, sendo uma amostra com um total de 964 linhas
     distribuídas entre 2007 a 2020. Está amostra trata-se dos dados de teste. O eixo Y representa a quantidade de casos de dengue.
@@ -67,7 +67,7 @@ A API recebe os dados no seguinte formato Json:
     #### Análise preditiva.
 
     As métricas utilizadas para avaliação de desempenho dos modelos foram Coeficiente de Determinação R² e Erro Médio Absoluto respectivamente.
-    ![imagem11](r2.png) ![imagem12](mae.png)
+ ![imagem11](r2.png) ![imagem12](mae.png)
 
      Tomando como exemplo o modelo que teve o menor erro, o XGBoost, o modelo erra em quantidade de casos de dengue até 36 casos para mais
      e 36 casos para menos em média, levando em consideração o alvo sendo a 5ª semana de casos de dengue no futuro e o MAE.
