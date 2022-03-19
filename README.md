@@ -15,22 +15,22 @@ A API recebe os dados no seguinte formato Json:
 
 Dicionário das variáveis:
 
-1 dengue => Infectados dengue
-2 dengue_sma7 => Infectados de dengue, média móvel de 7 dias
-3 acumulado_dengue_21 => Infectados dengue acumulado 21 dias
-4 acumulado => Acumulado de casos de dengue
-5 populacao => População
-6 densidade_dem => Densidade demográfica
-7 precipitacao_sma7 => Média móvel simples da precipitação de chuva
-8 umidade_sma7 => Média móvel simples da umidade relativa do ar
-9 vento_vel_sma7 => Média móvel simples da velocidade do vento
+    1 dengue => Infectados dengue
+    2 dengue_sma7 => Infectados de dengue, média móvel de 7 dias
+    3 acumulado_dengue_21 => Infectados dengue acumulado 21 dias
+    4 acumulado => Acumulado de casos de dengue
+    5 populacao => População
+    6 densidade_dem => Densidade demográfica
+    7 precipitacao_sma7 => Média móvel simples da precipitação de chuva
+    8 umidade_sma7 => Média móvel simples da umidade relativa do ar
+    9 vento_vel_sma7 => Média móvel simples da velocidade do vento
 
 ### Análise Exploratória dos dados.
 
      Esta análise utiliza dados de três fontes distintas, são elas:
      i) IBGE; ii) SINAN; e iii) INMET. A análise têm dois objetivos complementares.
 
-        1 Identificar valores discrepantes (outliers).
+        1 Identificar valores discrepantes.
         2 identificar correlações entre variáveis com o alvo.
 
     A identificação dos atributos com maiores quantidade de valores discrepantes são
@@ -44,7 +44,7 @@ Dicionário das variáveis:
 ![imagem0](BoxPlot.png)
 
     Os valores discrepantes mostrados na figura são resultado de surtos de dengue ocorridos na cidade
-    de Fortaleza, portanto não são outliers. Há um evidente relacionamento entre as variáveis estudadas e o alvo, os surtos
+    de Fortaleza, portanto não serão descartados. Há um evidente relacionamento entre as variáveis estudadas e o alvo, os surtos
     de dengue são resultado de picos nos valores das variáveis estudadas. Isso fica mais evidente no gráfico de correlacão de variáveis.
 
 #### Correlação para semana 01
