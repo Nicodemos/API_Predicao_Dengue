@@ -61,8 +61,7 @@ Dicionário das variáveis:
     No estudo de correlações os valores variam de -1 a 1, quanto mais próximo de 1 ou -1 mais forte é a
     relação entre variável e alvo. Os valores com tendência a -1 indicam que os dados têm relação inversamente proporcionais.
 
-    Devido a baixa correlação das variáveis a médida que o número de semanas aumenta, a predição será feita levando
-    em consideração a 5ª semana à frente, e variáveis com niveis de correlacão <= -0.30 ou >= 0.30
+    Para variáveis/atributos que o coeficiente de correlação de Spearman mostrou maior níveis de relacionamento com o alvo, assume-se que estas variáveis não se     	 relacionam com o alvo de forma linear, ou tem um relacionamento monótono. Devido a baixa correlação das variáveis a medida que o número de semanas aumenta,	    	será utilizada a 5ª semana à frente como alvo, e níveis de correlacão <= -0.30 ou >= 0.30.
 
 ### Desempenho dos modelos.
 
